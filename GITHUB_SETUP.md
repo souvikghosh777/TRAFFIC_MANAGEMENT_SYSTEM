@@ -22,7 +22,7 @@ Replace `YOUR_USERNAME` with your actual GitHub username:
 
 ```powershell
 # Add the remote repository (replace YOUR_USERNAME)
-git remote add origin https://github.com/YOUR_USERNAME/smart-traffic-management-system.git
+git remote add origin https://github.com/souvikghosh777/smart-traffic-management-system.git
 
 # Set main branch
 git branch -M main
