@@ -1,0 +1,135 @@
+/* Home Page Component Styles */
+.home-page {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* AOS Animation Overrides */
+[data-aos] {
+  pointer-events: none;
+}
+
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom AOS Animations */
+[data-aos="fade-up"] {
+  transform: translate3d(0, 40px, 0);
+  opacity: 0;
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+[data-aos="fade-left"] {
+  transform: translate3d(-40px, 0, 0);
+  opacity: 0;
+}
+
+[data-aos="fade-left"].aos-animate {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+[data-aos="fade-right"] {
+  transform: translate3d(40px, 0, 0);
+  opacity: 0;
+}
+
+[data-aos="fade-right"].aos-animate {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.6);
+  opacity: 0;
+}
+
+[data-aos="zoom-in"].aos-animate {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Performance optimizations */
+.home-page * {
+  box-sizing: border-box;
+}
+
+.home-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Loading state for home page */
+.home-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.home-loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--surface-light);
+  border-top: 3px solid var(--primary);
+  border-radius: 50%;
+  animation: homeSpinner 1s linear infinite;
+}
+
+@keyframes homeSpinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Section spacing consistency */
+.home-page section {
+  position: relative;
+  z-index: 1;
+}
+
+.home-page section + section {
+  margin-top: 0;
+}
+
+/* Scroll behavior improvements */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  [data-aos] {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Focus states for accessibility */
+.home-page a:focus,
+.home-page button:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .home-page {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .home-page .navbar,
+  .home-page .footer {
+    display: none !important;
+  }
+}

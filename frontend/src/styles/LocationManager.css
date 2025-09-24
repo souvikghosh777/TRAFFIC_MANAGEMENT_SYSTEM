@@ -1,0 +1,358 @@
+/* LocationManager Component Styles */
+.location-manager {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.location-manager-card {
+  background: rgba(30, 41, 59, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-2xl);
+  transition: var(--transition-normal);
+}
+
+.location-manager-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-3xl);
+}
+
+.location-manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.header-icon {
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+.add-location-btn {
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: 0.75rem;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-weight: 600;
+  text-transform: none;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-normal);
+}
+
+.add-location-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+.manager-description {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.6;
+}
+
+.locations-list {
+  min-height: 300px;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-3xl);
+  text-align: center;
+  background: rgba(15, 23, 42, 0.3);
+  border-radius: 1rem;
+  border: 2px dashed var(--border);
+  margin: var(--spacing-lg) 0;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.6;
+}
+
+.location-item {
+  background: rgba(51, 65, 85, 0.4);
+  border-radius: 0.75rem;
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--border-light);
+  transition: var(--transition-normal);
+}
+
+.location-item:hover {
+  background: rgba(51, 65, 85, 0.6);
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.location-content {
+  flex: 1;
+  margin-right: var(--spacing-lg);
+}
+
+.location-primary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.location-chips {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.location-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
+}
+
+.location-actions {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.edit-btn {
+  color: var(--secondary);
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 0.5rem;
+  transition: var(--transition-normal);
+}
+
+.edit-btn:hover {
+  background: rgba(16, 185, 129, 0.2);
+  transform: scale(1.1);
+}
+
+.delete-btn {
+  color: var(--accent);
+  background: rgba(245, 158, 11, 0.1);
+  border-radius: 0.5rem;
+  transition: var(--transition-normal);
+}
+
+.delete-btn:hover {
+  background: rgba(245, 158, 11, 0.2);
+  transform: scale(1.1);
+}
+
+/* Dialog Styles */
+.location-dialog .MuiDialog-paper {
+  background: rgba(30, 41, 59, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-3xl);
+}
+
+.dialog-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  background: var(--gradient-primary);
+  color: white;
+  padding: var(--spacing-lg) var(--spacing-xl);
+  margin: 0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.dialog-content {
+  padding: var(--spacing-xl);
+}
+
+.dialog-actions {
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-top: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.location-btn {
+  border-color: var(--primary);
+  color: var(--primary);
+  transition: var(--transition-normal);
+}
+
+.location-btn:hover {
+  background: rgba(102, 126, 234, 0.1);
+  border-color: var(--primary-light);
+}
+
+.save-btn {
+  background: var(--gradient-secondary);
+  color: white;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-normal);
+}
+
+.save-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Form Field Styles */
+.location-dialog .MuiTextField-root {
+  margin-bottom: var(--spacing-md);
+}
+
+.location-dialog .MuiOutlinedInput-root {
+  border-radius: 0.75rem;
+  background: rgba(51, 65, 85, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.location-dialog .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--primary);
+}
+
+.location-dialog .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--primary);
+}
+
+.location-dialog .MuiInputLabel-root.Mui-focused {
+  color: var(--primary);
+}
+
+/* Chip Styles */
+.location-chips .MuiChip-root {
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.location-chips .MuiChip-outlined {
+  border-color: var(--border);
+  color: var(--text-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .location-manager {
+    padding: var(--spacing-md);
+  }
+  
+  .location-manager-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: stretch;
+  }
+  
+  .location-item {
+    padding: var(--spacing-md);
+  }
+  
+  .location-actions {
+    position: static;
+    margin-top: var(--spacing-md);
+    justify-content: flex-end;
+  }
+  
+  .location-chips {
+    flex-wrap: wrap;
+  }
+  
+  .dialog-content {
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .location-primary {
+    align-items: flex-start;
+  }
+  
+  .location-chips .MuiChip-root {
+    font-size: 0.7rem;
+    height: 24px;
+  }
+  
+  .empty-icon {
+    font-size: 3rem;
+  }
+  
+  .empty-state {
+    padding: var(--spacing-xl);
+  }
+}
+
+/* Animation Effects */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.location-item {
+  animation: slideInUp 0.3s ease-out;
+}
+
+.location-dialog .MuiDialog-paper {
+  animation: slideInUp 0.4s ease-out;
+}
+
+/* Hover Effects for Interactive Elements */
+.location-manager-card .MuiButton-root,
+.location-manager-card .MuiIconButton-root,
+.location-manager-card .MuiChip-root {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.location-manager-card .MuiButton-root:hover,
+.location-manager-card .MuiIconButton-root:hover {
+  transform: translateY(-1px);
+}
+
+/* Focus States for Accessibility */
+.location-manager-card .MuiButton-root:focus,
+.location-manager-card .MuiIconButton-root:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Loading States */
+.location-item.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.location-item.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+}
