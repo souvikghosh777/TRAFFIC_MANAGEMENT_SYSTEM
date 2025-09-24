@@ -12,7 +12,7 @@
 After creating the repository, GitHub will show you commands like this:
 
 ```bash
-git remote add origin https://github.com/souvikghosh777/smart-traffic-management-system.git
+git remote add origin https://github.com/souvikghosh777/TRAFFIC_MANAGEMENT_SYSTEM.git
 git branch -M main
 git push -u origin main
 ```
@@ -22,7 +22,7 @@ Replace `souvikghosh777` with your actual GitHub username:
 
 ```powershell
 # Add the remote repository (replace YOUR_USERNAME)
-git remote add origin https://github.com/souvikghosh777/smart-traffic-management-system.git
+git remote add origin https://github.com/souvikghosh777/TRAFFIC_MANAGEMENT_SYSTEM.git
 
 # Set main branch
 git branch -M main
