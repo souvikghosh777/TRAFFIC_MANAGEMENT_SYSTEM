@@ -21,24 +21,25 @@
   "author": "Smart Traffic Team",
   "license": "MIT",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "react-router-dom": "^6.8.1",
-    "@mui/material": "^5.14.8",
-    "@mui/icons-material": "^5.14.8",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.8",
+    "@mui/material": "^5.14.8",
+    "aos": "^2.3.4",
     "chart.js": "^4.4.0",
-    "react-chartjs-2": "^5.2.0",
-    "socket.io-client": "^4.7.2",
     "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1",
     "react-spring": "^9.7.3",
-    "aos": "^2.3.4"
+    "socket.io-client": "^4.7.2"
   },
   "devDependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
   },
   "browserslist": {
     "production": [
